@@ -5,13 +5,17 @@
 
         <style>
 
+            @import url('https://fonts.googleapis.com/css?family=Comfortaa|K2D|Krub|Mali|Slabo+27px');
+
             body {
                 width: 550px;
                 margin: auto;
+                background: #EAF2EF;
             }
 
             h1 {
                 border-bottom: 1px solid black;
+                font-family: 'Slabo 27px', serif;
             }
 
             .Square {
@@ -19,29 +23,36 @@
                 width: 80px;
                 font-size: 45pt;
                 text-align: center;
+                font-family: 'Comfortaa', cursive;
+            }
+
+            #message {
+                font-size: 18pt;
+                font-family: 'Slabo 27px', serif;
             }
 
         </style>
     </head>
-    <body>
+    <body onload="startGame">
         <h1>Tic Tac Toe in JAVASCRIPT</h1>
         <div id="message">message here</div>
         <table border="1">
             <tr>
-                <td class="Square">x</td>
-                <td class="Square">o</td>
-                <td class="Square">x</td>
+                <td class="Square" onClick="nextMove(this)"></td>
+                <td class="Square" onClick="nextMove(this)"></td>
+                <td class="Square" onClick="nextMove(this)"></td>
             </tr>
             <tr>
-                    <td class="Square">x</td>
-                    <td class="Square">o</td>
-                    <td class="Square">x</td>
+                    <td class="Square" onClick="nextMove(this)"></td>
+                    <td class="Square" onClick="nextMove(this)"></td>
+                    <td class="Square" onClick="nextMove(this)"></td>
                 </tr>
                 <tr>
-                        <td class="Square">x</td>
-                        <td class="Square">o</td>
-                        <td class="Square">x</td>
+                        <td class="Square" onClick="nextMove(this)"></td>
+                        <td class="Square" onClick="nextMove(this)"></td>
+                        <td class="Square" onClick="nextMove(this)"></td>
                     </tr>   
         </table>
+        <script src="main.js"></script>
     </body>
 </html>
