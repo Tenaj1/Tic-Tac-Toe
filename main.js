@@ -3,6 +3,6 @@ function startGame() {
     document.turn = "X";
 }
 
-function nextMove(Square) {
-    square.init = document.turn;
+function nextMove(square) {
+    square.innerText = document.turn;
 }
